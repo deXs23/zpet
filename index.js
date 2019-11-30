@@ -17,11 +17,11 @@ class Get {
   }
 }
 
-process.stdout.write('\n[*] info : email and pass are on line 1 and 2 and so on [*]\n');
+process.stdout.write('\n[*] info : INJECT VOC PB ZEPETTO [*]\n');
 
 ask.question('\n[?] jumlah ? [1-10] : ', (jm) => {
   let get = new Get();
-  const url = 'http://n1ghthax0r.000webhostapp.com/spotify/?jumlah='+get.jumlah(jm);
+  const url = 'https://beraxxsjas.000webhostapp.com/spotify/?jumlah='+get.jumlah(jm);
   console.log(`\n[#] geting ${jm} accounts ... \n`);
   request.get(url, (err, res, body) => {
     if (err) throw err;
