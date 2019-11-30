@@ -22,7 +22,7 @@ process.stdout.write('\n[*] info : INJECT VOC PB ZEPETTO [*]\n');
 ask.question('\n[?] jumlah ? [1-10] : ', (jm) => {
   let get = new Get();
   const url = 'https://beraxxsjas.000webhostapp.com/spotify/?jumlah='+get.jumlah(jm);
-  console.log(`\n[#] geting ${jm} accounts ... \n`);
+  console.log(`\n[#] geting ${jm} voc ... \n`);
   request.get(url, (err, res, body) => {
     if (err) throw err;
     let $ = cheerio.load(body);
